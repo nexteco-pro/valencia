@@ -404,14 +404,15 @@
 				<div class="card shadow">
 					<div class="card-body p-4">
 
-						<form action="https://formsubmit.co/nexteco.pro@gmail.com" method="POST">
+						<form
+							action="https://formspree.io/f/xvzowvzo"
+							method="POST"
+						>
 
-							<!-- CONFIGURACIÓN FORMSUBMIT -->
-							<input type="hidden" name="_next" value="https://tudominio.com/gracias.html">
-							<input type="hidden" name="_captcha" value="false">
-							<input type="hidden" name="_template" value="table">
-							<input type="text" name="_honey" style="display:none">
-							<input type="hidden" name="_autoresponse" value="Recibimos tu solicitud. Nos pondremos en contacto en menos de 24 h.">
+							<!-- CONFIGURACIÓN FORMSPREE -->
+							<input type="hidden" name="_redirect" value="https://nexteco-pro.github.io/valencia">
+							<input type="hidden" name="_subject" value="Nuevo contacto desde la web">
+							<input type="text" name="_gotcha" style="display:none">
 
 							<div class="row g-3">
 								<div class="col-md-6">
@@ -435,15 +436,26 @@
 								</div>
 
 								<div class="col-12">
-									<label class="form-label">Mensaje</label>
-									<textarea name="message" rows="4" class="form-control"
-										placeholder="Cuéntanos sobre tus necesidades tecnológicas..." required></textarea>
+									<label class="form-label">Mensaje *</label>
+									<textarea
+										name="message"
+										rows="4"
+										class="form-control"
+										placeholder="Cuéntanos sobre tus necesidades tecnológicas..."
+										required
+									></textarea>
 								</div>
 
 								<div class="col-12">
 									<div class="form-check">
-										<input class="form-check-input" type="checkbox" name="newsletter" value="Sí">
-										<label class="form-check-label">
+										<input
+											class="form-check-input"
+											type="checkbox"
+											name="newsletter"
+											value="Sí"
+											id="newsletter"
+										>
+										<label class="form-check-label" for="newsletter">
 											Quiero recibir consejos tecnológicos mensuales para mi negocio
 										</label>
 									</div>
@@ -455,6 +467,7 @@
 									</button>
 								</div>
 							</div>
+
 						</form>
 
 					</div>
